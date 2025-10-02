@@ -1,0 +1,11 @@
+== groups ==
+dev:x:1001:devuser
+admin:x:118:adminuser
+auditor:x:1002:audituser
+automation:x:1003:automation
+
+== users ==
+uid=1001(devuser) gid=1004(devuser) groups=1004(devuser),1001(dev)
+uid=1002(adminuser) gid=1005(adminuser) groups=1005(adminuser),118(admin)
+uid=1003(audituser) gid=1006(audituser) groups=1006(audituser),1002(auditor)
+uid=1004(automation) gid=1003(automation) groups=1003(automation)

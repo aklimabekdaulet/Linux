@@ -1,0 +1,9 @@
+== perms ==
+drwxrwx--- 2 appuser dev   4096 Oct  2 21:26 /srv/app
+drwxrwx--- 2 appuser admin 4096 Oct  2 21:26 /var/log/simple-fit
+
+== namei /srv/app ==
+f: /srv/app
+drwxr-xr-x root    root /
+drwxr-xr-x root    root srv
+drwxrwx--- appuser dev  app

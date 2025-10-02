@@ -1,0 +1,10 @@
+== sudoers ==
+%admin ALL=(ALL) ALL
+%automation ALL=NOPASSWD:/bin/systemctl restart simple-fit,/bin/systemctl status simple-fit,/usr/bin/install -m 0644 -o appuser -g dev * /srv/app/
+Defaults:%automation !authenticate, logfile=/var/log/sudo-audit.log, requiretty
+
+visudo -c:
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-cloud-init-users: parsed OK
+/etc/sudoers.d/README: parsed OK
+/etc/sudoers.d/simple-fit: parsed OK
